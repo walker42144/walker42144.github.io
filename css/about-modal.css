@@ -1,0 +1,7 @@
+.about-modal{display:none;position:fixed;inset:0;z-index:1000}
+.about-modal[aria-hidden="false"]{display:block}
+.about-modal__overlay{position:fixed;inset:0;background:rgba(0,0,0,.5)}
+.about-modal__content{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);max-width:640px;width:calc(100% - 48px);background:#fff;color:inherit;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,.2);padding:24px}
+.about-modal__close{position:absolute;top:8px;right:12px;font-size:24px;background:transparent;border:none;cursor:pointer}
+.about-modal__body{margin-top:8px;line-height:1.7}
+@media (prefers-color-scheme: dark){.about-modal__content{background:#1e1e1e;color:#ddd}}

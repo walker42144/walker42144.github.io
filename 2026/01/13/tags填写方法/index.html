@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="📝 Tags 填写格式在 Hexo 的 Front Matter 中，tags 有多种写法： 单个标签12345---title: 文章标题date: 2026-01-12 10:00:00tags: JavaScript---  多个标签（方式1：列表格式）12345678---title: 文章标题date: 2026-01-12 10:00:00tags:  - JavaScript  -">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tags填写方法">
+<meta property="og:url" content="https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:site_name" content="Walker的博客">
+<meta property="og:description" content="📝 Tags 填写格式在 Hexo 的 Front Matter 中，tags 有多种写法： 单个标签12345---title: 文章标题date: 2026-01-12 10:00:00tags: JavaScript---  多个标签（方式1：列表格式）12345678---title: 文章标题date: 2026-01-12 10:00:00tags:  - JavaScript  -">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-01-12T16:40:33.000Z">
+<meta property="article:modified_time" content="2026-01-12T16:41:22.003Z">
+<meta property="article:author" content="NOMONO">
+<meta property="article:tag" content="tech">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>tags填写方法</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/about-modal.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="顶部" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">项目</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="上一篇" href="/2026/01/15/20260115/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="下一篇" href="/2026/01/13/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="分享文章" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&text=tags填写方法"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&title=tags填写方法"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&is_video=false&description=tags填写方法"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=tags填写方法&body=Check out this article: https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&title=tags填写方法"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&title=tags填写方法"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&title=tags填写方法"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&title=tags填写方法"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&name=tags填写方法&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&t=tags填写方法"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%9D-Tags-%E5%A1%AB%E5%86%99%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">📝 Tags 填写格式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E4%B8%AA%E6%A0%87%E7%AD%BE"><span class="toc-number">1.1.</span> <span class="toc-text">单个标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%EF%BC%88%E6%96%B9%E5%BC%8F1%EF%BC%9A%E5%88%97%E8%A1%A8%E6%A0%BC%E5%BC%8F%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">多个标签（方式1：列表格式）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%EF%BC%88%E6%96%B9%E5%BC%8F2%EF%BC%9A%E6%95%B0%E7%BB%84%E6%A0%BC%E5%BC%8F%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">多个标签（方式2：数组格式）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%8C%E6%95%B4%E7%A4%BA%E4%BE%8B%EF%BC%88%E5%90%AB%E5%88%86%E7%B1%BB%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">完整示例（含分类）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%8C-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">2.</span> <span class="toc-text">📌 注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%96-%E5%88%86%E7%B1%BB%E4%B8%8E%E6%A0%87%E7%AD%BE%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">3.</span> <span class="toc-text">🔖 分类与标签的区别</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        tags填写方法
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">NOMONO</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2026-01-12T16:40:33.000Z" class="dt-published" itemprop="datePublished">2026-01-13</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/tech/" rel="tag">tech</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h2 id="📝-Tags-填写格式"><a href="#📝-Tags-填写格式" class="headerlink" title="📝 Tags 填写格式"></a>📝 <strong>Tags 填写格式</strong></h2><p>在 Hexo 的 Front Matter 中，tags 有多种写法：</p>
+<h3 id="单个标签"><a href="#单个标签" class="headerlink" title="单个标签"></a><strong>单个标签</strong></h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-01-12 10:00:00</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">JavaScript</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="多个标签（方式1：列表格式）"><a href="#多个标签（方式1：列表格式）" class="headerlink" title="多个标签（方式1：列表格式）"></a><strong>多个标签（方式1：列表格式）</strong></h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-01-12 10:00:00</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">JavaScript</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">前端开发</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">Web</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="多个标签（方式2：数组格式）"><a href="#多个标签（方式2：数组格式）" class="headerlink" title="多个标签（方式2：数组格式）"></a><strong>多个标签（方式2：数组格式）</strong></h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-01-12 10:00:00</span></span><br><span class="line"><span class="attr">tags:</span> [<span class="string">JavaScript</span>, <span class="string">前端开发</span>, <span class="string">Web</span>]</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="完整示例（含分类）"><a href="#完整示例（含分类）" class="headerlink" title="完整示例（含分类）"></a><strong>完整示例（含分类）</strong></h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Vue.js</span> <span class="string">入门指南</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-01-12 10:00:00</span></span><br><span class="line"><span class="attr">categories:</span> </span><br><span class="line">  <span class="bullet">-</span> <span class="string">前端开发</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">Vue.js</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">JavaScript</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">框架</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="string">正文内容从这里开始...</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="📌-注意事项"><a href="#📌-注意事项" class="headerlink" title="📌 注意事项"></a>📌 <strong>注意事项</strong></h2><ul>
+<li><strong>tags</strong> 是复数，一篇文章可以有多个标签</li>
+<li><strong>categories</strong> 是分类，支持多级分类（有层级关系）</li>
+<li>标签和分类可以是中文或英文</li>
+<li>如果不需要标签，可以留空或删除该字段</li>
+<li>注意缩进格式（YAML 语法）</li>
+</ul>
+<h2 id="🔖-分类与标签的区别"><a href="#🔖-分类与标签的区别" class="headerlink" title="🔖 分类与标签的区别"></a>🔖 <strong>分类与标签的区别</strong></h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 单层分类</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">教程</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 多层分类（有层级）</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">编程</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">前端开发</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">Vue</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 多个标签（无层级，平铺）</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">Vue.js</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">组件</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">响应式</span></span><br></pre></td></tr></table></figure>
+
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">首页</a></li>
+        
+          <li><a href="/archives/">归档</a></li>
+        
+          <li><a target="_blank" rel="noopener" href="http://github.com/probberechts">项目</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%9D-Tags-%E5%A1%AB%E5%86%99%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">📝 Tags 填写格式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E4%B8%AA%E6%A0%87%E7%AD%BE"><span class="toc-number">1.1.</span> <span class="toc-text">单个标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%EF%BC%88%E6%96%B9%E5%BC%8F1%EF%BC%9A%E5%88%97%E8%A1%A8%E6%A0%BC%E5%BC%8F%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">多个标签（方式1：列表格式）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%EF%BC%88%E6%96%B9%E5%BC%8F2%EF%BC%9A%E6%95%B0%E7%BB%84%E6%A0%BC%E5%BC%8F%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">多个标签（方式2：数组格式）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%8C%E6%95%B4%E7%A4%BA%E4%BE%8B%EF%BC%88%E5%90%AB%E5%88%86%E7%B1%BB%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">完整示例（含分类）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%8C-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">2.</span> <span class="toc-text">📌 注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%96-%E5%88%86%E7%B1%BB%E4%B8%8E%E6%A0%87%E7%AD%BE%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">3.</span> <span class="toc-text">🔖 分类与标签的区别</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&text=tags填写方法"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&title=tags填写方法"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&is_video=false&description=tags填写方法"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=tags填写方法&body=Check out this article: https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&title=tags填写方法"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&title=tags填写方法"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&title=tags填写方法"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&title=tags填写方法"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&name=tags填写方法&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://walker42144.github.io/2026/01/13/tags%E5%A1%AB%E5%86%99%E6%96%B9%E6%B3%95/&t=tags填写方法"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2025-2026
+    NOMONO
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><!--
+       --><li><a href="/">首页</a></li><!--
+       --><!--
+     --><!--
+       --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+       --><!--
+     --><!--
+       --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">项目</a></li><!--
+       --><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板！\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功！");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+
+<script src="/js/about-modal.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+
+</body>
+</html>
